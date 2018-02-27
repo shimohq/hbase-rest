@@ -1,0 +1,23 @@
+{
+  "name": "hbase-rest",
+  "version": "0.0.0",
+  "description": "HBase REST client.",
+  "main": "client.js",
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "standard"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^11.4.1",
+    "standard": "^10.0.3",
+    "uuid": "^3.2.1"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "deep-assign": "^2.0.0",
+    "is": "^3.2.1",
+    "node-fetch": "^2.0.0"
+  }
+}
