@@ -24,6 +24,15 @@ test('new HBase()', t => {
   t.is(client.options.port, 8080)
 
   t.true(is.fn(client.table))
+
+  client = new HBase('localhost:1234')
+  t.true(is.object(client))
+  t.true(is.object(client.options))
+  t.is(client.options.protocol, 'http:')
+  t.is(client.options.host, 'localhost')
+  t.is(client.options.port, 1234)
+
+  t.true(is.fn(client.table))
 })
 
 test('new HBase() throws error if options invalid', t => {
