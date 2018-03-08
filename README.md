@@ -178,7 +178,6 @@ Single row:
 
 ```js
 const row = table.row('my_row_key')
-await row.create()
 
 await row.put([
   {
